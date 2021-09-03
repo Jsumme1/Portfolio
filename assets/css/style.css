@@ -103,6 +103,16 @@
     display: flex;
   }
 
+
+  .primary-border{
+    border-color:var(--primary-color);
+
+  }
+
+  .secondary-border{
+    border-color: var(--tertiary-color);
+  }
+
     /* Hero Style Start */
     .hero {
         background-image:  url(../images/swoopbackground.jpg);
@@ -134,3 +144,31 @@
         width: 40%;
         float: left;  
       }
+
+     
+    /* about me styling */
+
+    .flex-container {
+        display: flex;
+        align-items: stretch;
+        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
+        color: var(--quaternary-color);
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+           
+      
+      .biography {
+        font-size: 15px;
+        flex-grow: 1;
+        text-align: left;
+    }
+    
+    .side-bar{
+        flex-grow: 10;
+        color: var(--primary-color);
+        padding-right: 10%;
+        
+     }
