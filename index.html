@@ -12,7 +12,7 @@
     <!-- Navigation bar -->
 <header>
         <h1>
-            Julie Summers 
+          <a href="/"> Julie Summers</a> 
         </h1>
         <nav>
             <!-- Unordered List Element -->
@@ -57,10 +57,7 @@
 
   <!-- About Me section -->
   <section id="about-me" class="flex-container">
-    <div class="side-bar"> 
-       <h2>About Me</h2>
-    </div> 
-
+    <h2 class="section-title">About Me</h2>
     <div class="biography">
      <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Adipiscing bibendum est ultricies integer quis auctor elit. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Aliquet nibh praesent tristique magna sit amet purus. Bibendum at varius vel pharetra vel. Morbi quis commodo odio aenean sed adipiscing diam donec. Enim praesent elementum facilisis leo vel fringilla est. At lectus urna duis convallis convallis. Amet luctus venenatis lectus magna. Sollicitudin aliquam ultrices sagittis orci. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Augue lacus viverra vitae congue eu consequat ac felis donec.
@@ -70,34 +67,49 @@
   </section>
 
   <!-- Current Projects Section-->
-<section id="current-projects" class ="current">
-  <h2 class="section-title primary-border">Current Projects</h2>
-  <div class="flex-container">
+<section id="current-projects" class="flex-container">
+  <h2 class="section-title">Current Projects</h2>
+  <div class="flex-container-projects">
     <div class ="flex-item">
+        <img src="./assets/images/robot.jpg" alt="/">
+        <div>
+            <a href="https://jsumme1.github.io/run-buddy/">link</a><br />
+       </div>
     <span>Robot Gladiators</span>
    </div>
-  </div> 
+  
   <div class ="flex-item">
+    <img src="./assets/images/password.jpg" alt="/">
+    <div>
+        <a href="https://jsumme1.github.io/run-buddy/">link</a><br />
+   </div>
     <span>Password Generator</span>
    </div>
   </div> 
-  </section>
+</section>
 
 <!-- Past Projects Section -->
-<section id="past-projects" class ="past">
-    <h2 class="section-title primary-border">Past Projects</h2>
-    <div class="flex-container">
-      <div class="flex-item">
-          <span>Run Buddy</span>
-     </div>
+<section id="past-projects" class="flex-container">
+    <h2 class="section-title">Past Projects</h2>
+    <div class="flex-container-projects">
+        <div class="flex-item">
+            <img src="./assets/images/RunBuddy.JPG" alt="/">
+            <div>
+                <a href="https://jsumme1.github.io/run-buddy/">link</a><br />
+           </div>
+            <span>Run Buddy</span>
+        </div>
      <div class="flex-item">
+        <img src="./assets/images/something.awesome.jpg" alt="/">
         <span>Something Awesome</span>
    </div>   
    <div class="flex-item">
+    <img src="./assets/images/something.cool.jpg" alt="/">
     <span>Something Cool</span>
 </div>
 <div class="flex-item">
-    <span>Something ok</span>
+    <img src="./assets/images/something.neat.jpg" alt="/">
+    <span>Something neat</span>
 </div>  
     </div>
 
@@ -107,13 +119,11 @@
 <!-- Contact Me Section -->
 
 <!--"reach out" section-->
-<section id="contact-me" class="contact">
-    <div class="flex-row">
-    <h2 class="section-title secondary-border">Contact Me</h2>
-    </div>
-
-    <div class="contact-info">
-        <div>
+<section id="contact-me" class="flex-container">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="flex-container-projects">
+        <div class="flex-item">
+    
         <h3>Julie Summers</h3>
                <address>
                10922 Wrenwood Gr. <br />
@@ -124,7 +134,7 @@
            </address>
        </div>
 
-       <div class="contact-form">
+       <div class="flex-item">
             <h3>Message Me!</h3>
             <form>
                <label for="contact-name">Your Name</label>

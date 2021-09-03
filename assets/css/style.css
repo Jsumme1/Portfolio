@@ -10,13 +10,19 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
+      }
   
   body {
       /*<Body> Color and Font */
       color: var(--tertiary-color);
       font-family: Calibri, Arial, sans-serif;
+      width: 100%;    
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+        
     }
+
     /* apply styles to <header> */
   header {
       padding: 20px 35px;
@@ -27,12 +33,12 @@
       position: -webkit-sticky;
       position: sticky;
       top: 0;
-      background-image: url("../images/hero-bg.jpg");
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-position: 80%;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
       z-index: 9999;
+      width: 100%;
     }
   
     header h1 {
@@ -82,6 +88,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: var(--secondary-color);
   }
 
   footer h2 {
@@ -103,16 +110,15 @@
     display: flex;
   }
 
-
-  .primary-border{
-    border-color:var(--primary-color);
-
+  .section-title {
+    width: 100%;
+    color: var(--primary-color);
+    padding-bottom: 50px;
+    padding-right: 50px;
+    text-align: center;
+    flex-grow: 8;
   }
-
-  .secondary-border{
-    border-color: var(--tertiary-color);
-  }
-
+  
     /* Hero Style Start */
     .hero {
         background-image:  url(../images/swoopbackground.jpg);
@@ -154,7 +160,6 @@
         background-color: var(--primary-color);
         background-color: var(--secondary-color);
         color: var(--quaternary-color);
-        margin: 10px;
         text-align: center;
         font-size: 30px;
       }
@@ -172,3 +177,54 @@
         padding-right: 10%;
         
      }
+
+     /* current projects styling */
+
+    .flex-container-projects a {
+        text-decoration: none;
+        color: var(--primary-color);
+        display: inline;
+      }
+     .flex-container-projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-between;
+        width: 90%;
+
+      }
+      
+      /* flex child */
+      .flex-item {
+        width: 30%;
+        border-radius: 14px;
+        border: 4px solid #fb3e55;
+        background-color: #393b4f;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        background-size: cover;
+        background-position: center;
+        padding: 20px 0;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      /* for text area inside of flex item */
+      .flex-item span {
+        /* pushes element to bottom of flex item */
+        margin-top: auto;
+        width: 100%;
+        background-color: #a8adba;
+        color: #393b4f;
+        padding: 10px 5px;
+        text-align: center;
+      }
+
+      flex-row {
+          flex-direction: colummn;
+      }
+      contact-info {
+
+      }
