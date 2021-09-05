@@ -10,7 +10,7 @@ Full style copy of resume available as link.
 * CSS
 
 ## Website
-https://jsumme1.github.io/portfolio/
+https://jsumme1.github.io/Portfolio/
 
 ## Screen Shot
 ![image](https://user-images.githubusercontent.com/88805050/132143911-9d5ebdff-1b58-4856-a630-26cd1f72e5dd.png)
