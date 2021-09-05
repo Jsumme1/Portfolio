@@ -1,4 +1,4 @@
-
+/* Document Universal Formatting */
 :root{
     --primary-color: #38effc;
     --secondary-color: #1106a8;
@@ -13,17 +13,30 @@
       padding: 0;
       box-sizing: border-box;
       }
-  
+
+      section{
+        padding: 60px;
+      }
+    
+      .flex-row {
+        display: flex;
+      }
+    
+      /* End Universal Formatting */
+      
+ 
+/*<Body> Color and Font */
   body {
-      /*<Body> Color and Font */
       color: var(--tertiary-color);
       font-family: Calibri, Arial, sans-serif;
       width: 100%;    
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-        
-    }
+       }
+
+ /*End <Body> Color and Font */
+
 
     /* apply styles to <header> */
   header {
@@ -83,36 +96,9 @@
       text-shadow: none;
     }
 
-  footer {
-    background: var(--primary-color)e138;
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: var(--secondary-color);
-  }
+    /* End header styles */
 
-  footer h2 {
-    color:var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-  }
-
-  footer div {
-    line-height: 1.5;
-    text-align: right;
-  } 
-
-  section{
-    padding: 60px;
-  }
-
-  .flex-row {
-    display: flex;
-  }
-
-   
+  
     /* Hero Style Start */
     .hero {
         background-image:  url(../images/swoopbackground.jpg);
@@ -149,11 +135,8 @@
       }
 
      
-    /* about me styling */
-    .flex-row{
-      display:flex;
-    }
-
+    /* about me styling - first use section-title and primary-border*/
+   
     .section-title {
       font-size:  48px;
       color: var(--secondary-color);
@@ -165,7 +148,6 @@
       
     }
   
-
       .primary-border{
         border-color:var(--primary-color);
     
@@ -175,8 +157,10 @@
         font-size: 20px;
         text-align: left;
     }
+
+    /* End About me Styling */
     
-   /* begin Main project styling */
+   /* begin Main/Big project styling */
     .main-project {
       display: flex;
       flex-wrap: wrap;
@@ -195,6 +179,7 @@
     .main-project img {
       padding: 10px 10px 10px 10px;
       border-radius: 15px;
+      max-width: 100%;
     }
 
     .main-project a{
@@ -217,23 +202,25 @@
 
 
     
-     /*end of big --card seciton*/
+     /*end Main/Big project styling*/
 
-     /* past projects styling */
-       .flex-container-projects a {
+     /*begin past projects styling */
+   
+     .flex-container-projects {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+      padding-right: 10%;
+      padding-left: 10%;
+      }
+
+      .flex-container-projects a {
         text-decoration: none;
         color: var(--primary-color);
         display: inline;
       }
-     .flex-container-projects {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-between;
-        padding-right: 10%;
-        padding-left: 10%;
-        
-      }
+    
       
       /* flex child */
       .flex-item {
@@ -257,9 +244,12 @@
         padding: 10px 10px 10px 10px;
         border-radius: 15px;
       }
+
+      .flex-item a {
+        max-width: 100%;
+      }
       /* for text area inside of flex item */
       .flex-item span {
-        /* pushes element to bottom of flex item */
         margin-top: auto;
         width: 100%;
         background-color: var(--quaternary-color);
@@ -268,6 +258,10 @@
         text-align: center;
       }
 
+      
+     /*End past projects styling */
+
+     /* begin contacts styling */
         .contact-details {
         display: flex;
         flex-wrap: wrap;
@@ -278,5 +272,30 @@
       .contact-details a{
         color: var(--primary-color)
       }
-
     
+      /*end contacts styling */
+    
+          /* Begin Footer Styles */
+
+  footer {
+    background: var(--primary-color)e138;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+  }
+
+  footer h2 {
+    color:var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+  }
+
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  } 
+
+/* End Footer Styles */
