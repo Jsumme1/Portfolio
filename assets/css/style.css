@@ -4,7 +4,9 @@
     --secondary-color: #1106a8;
     --tertiary-color: #b2399e;
     --quaternary-color:white;
-    }
+    --card-color:#393b4f;
+    
+  }
   
     * {
       margin: 0;
@@ -34,9 +36,9 @@
       position: sticky;
       top: 0;
       background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
+      background-position: center;
+      background-attachment: fixed;
+      background-position: 80%;
       z-index: 9999;
       width: 100%;
     }
@@ -110,15 +112,7 @@
     display: flex;
   }
 
-  .section-title {
-    width: 100%;
-    color: var(--primary-color);
-    padding-bottom: 50px;
-    padding-right: 50px;
-    text-align: center;
-    flex-grow: 8;
-  }
-  
+   
     /* Hero Style Start */
     .hero {
         background-image:  url(../images/swoopbackground.jpg);
@@ -149,15 +143,37 @@
       .biopic img{
         width: 40%;
         float: left;  
+        border: 4px solid var(--primary-color);
+        border-radius: 14px;
+        box-shadow: 2px 2px 8px violet;
       }
 
      
     /* about me styling */
+    .flex-row{
+      display:flex;
+    }
+
+    .title-am {
+      font-size:  48px;
+      color: var(--secondary-color);
+      border-bottom: 3px solid;
+      padding-bottom: 20px;
+      text-align: center;
+      margin: 0 auto 35px auto;
+      width: 50%;
+      
+    }
+  
+
+      .primary-border{
+        border-color:var(--primary-color);
+    
+      }
 
     .flex-container {
         display: flex;
         align-items: stretch;
-        background-color: var(--primary-color);
         background-color: var(--secondary-color);
         color: var(--quaternary-color);
         text-align: center;
@@ -167,18 +183,20 @@
       
       .biography {
         font-size: 15px;
-        flex-grow: 1;
+        flex-grow: 8;
         text-align: left;
     }
     
-    .side-bar{
-        flex-grow: 10;
-        color: var(--primary-color);
-        padding-right: 10%;
-        
-     }
+   
 
      /* current projects styling */
+     .section-title {
+      width: 100%;
+      color: var(--primary-color);
+      padding-bottom: 50px;
+      padding-right: 50px;
+      text-align: center;
+     }
 
     .flex-container-projects a {
         text-decoration: none;
@@ -188,18 +206,21 @@
      .flex-container-projects {
         display: flex;
         flex-wrap: wrap;
+        align-items: stretch;
         flex-grow: 1;
         justify-content: space-between;
         width: 90%;
-
+        padding-right: 10%;
+        padding-left: 10%;
+        
       }
       
       /* flex child */
       .flex-item {
         width: 30%;
         border-radius: 14px;
-        border: 4px solid #fb3e55;
-        background-color: #393b4f;
+        border: 4px solid var(--tertiary-color);
+        background-color:var(--card-color);
         font-size: 22px;
         font-weight: bold;
         margin-bottom: 15px;
@@ -216,15 +237,22 @@
         /* pushes element to bottom of flex item */
         margin-top: auto;
         width: 100%;
-        background-color: #a8adba;
-        color: #393b4f;
+        background-color: var(--quaternary-color);
+        color: var(--card-color);
         padding: 10px 5px;
         text-align: center;
       }
 
-      flex-row {
-          flex-direction: colummn;
-      }
-      contact-info {
+      .contact-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+        text: 18px;
+        }
 
+      .contact-details a{
+        color: var(--primary-color)
       }
+
+    
