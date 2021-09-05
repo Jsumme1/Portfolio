@@ -154,7 +154,7 @@
       display:flex;
     }
 
-    .title-am {
+    .section-title {
       font-size:  48px;
       color: var(--secondary-color);
       border-bottom: 3px solid;
@@ -169,36 +169,39 @@
       .primary-border{
         border-color:var(--primary-color);
     
-      }
-
-    .flex-container {
-        display: flex;
-        align-items: stretch;
-        background-color: var(--secondary-color);
-        color: var(--quaternary-color);
-        text-align: center;
-        font-size: 30px;
-      }
-           
+      }         
       
       .biography {
-        font-size: 15px;
-        flex-grow: 8;
+        font-size: 20px;
         text-align: left;
     }
     
-   
+   /* begin Main project styling */
+    .main-project {
+      border: 3px solid var(--outline);
+      box-shadow: 3px 3px 10px var(--shadow);
+      border-radius: 4px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 10px 0px 20px 0px;
+      background-color: var(--card-color);
+      align-items: stretch;
+    }
+    
+    .main-project img {
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+    }
 
-     /* current projects styling */
-     .section-title {
-      width: 100%;
+    .main-project a{
+      font-size: 20px;
       color: var(--primary-color);
-      padding-bottom: 50px;
-      padding-right: 50px;
-      text-align: center;
-     }
+    }
+    
+     /*end of big --card seciton*/
 
-    .flex-container-projects a {
+     /* past projects styling */
+       .flex-container-projects a {
         text-decoration: none;
         color: var(--primary-color);
         display: inline;
@@ -207,9 +210,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: stretch;
-        flex-grow: 1;
         justify-content: space-between;
-        width: 90%;
         padding-right: 10%;
         padding-left: 10%;
         
@@ -232,6 +233,10 @@
         flex-direction: column;
       }
       
+      .flex-item img{
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px;
+      }
       /* for text area inside of flex item */
       .flex-item span {
         /* pushes element to bottom of flex item */
@@ -243,13 +248,16 @@
         text-align: center;
       }
 
+      flex-item a{
+        font-size: small;
+      }
+
       .contact-details {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        width: 90%;
-        text: 18px;
-        }
+        font-size: 20px;
+       }
 
       .contact-details a{
         color: var(--primary-color)
