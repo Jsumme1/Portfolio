@@ -178,15 +178,19 @@
     
    /* begin Main project styling */
     .main-project {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+      padding-right: 10%;
+      padding-left: 10%;
       border: 3px solid var(--outline);
       box-shadow: 3px 3px 10px var(--shadow);
       border-radius: 4px;
       margin-top: 20px;
       margin-bottom: 30px;
-      padding: 10px 0px 20px 0px;
       background-color: var(--card-color);
-      align-items: stretch;
-    }
+      }
     
     .main-project img {
       padding: 10px 10px 10px 10px;
@@ -197,6 +201,21 @@
       font-size: 20px;
       color: var(--primary-color);
     }
+
+    .main-project p {
+      font-size: 25px;
+      text-align: center;
+    }
+
+    
+    .main-project ul {
+      list-style-type: none;
+      padding-left: 20px;
+      padding-bottom: 30px;
+          }
+
+
+
     
      /*end of big --card seciton*/
 
@@ -218,7 +237,7 @@
       
       /* flex child */
       .flex-item {
-        width: 30%;
+        width: 45%;
         border-radius: 14px;
         border: 4px solid var(--tertiary-color);
         background-color:var(--card-color);
@@ -231,6 +250,7 @@
         min-height: 250px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
       }
       
       .flex-item img{
@@ -248,11 +268,7 @@
         text-align: center;
       }
 
-      flex-item a{
-        font-size: small;
-      }
-
-      .contact-details {
+        .contact-details {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
